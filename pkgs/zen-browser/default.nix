@@ -5,6 +5,7 @@
   undmg,
   config,
   sourceRoot,
+  writeText,
   ...
 }:
 let policies = {
@@ -26,8 +27,8 @@ stdenvNoCC.mkDerivation {
 
     mkdir -p $out/Applications/${sourceRoot}
     cp -r . $out/Applications/${sourceRoot}
-	mkdir -p "$out/Applications/${sourceRoot}/Content/Resources/distribution"
-	cp ${policiesJson} "$out/Applications/${sourceRoot}/Content/Resources/distribution/policies.json"
+	mkdir -p "$out/Applications/${sourceRoot}/Contents/Resources/distribution"
+	cp ${policiesJson} "$out/Applications/${sourceRoot}/Contents/Resources/distribution/policies.json"
 
 
     runHook postInstall
