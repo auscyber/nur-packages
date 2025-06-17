@@ -3,10 +3,15 @@
   lib,
   stdenvNoCC,
   undmg,
+  config,
   sourceRoot,
   ...
 }:
-
+let policies = {
+DisableAppUpdate = true;
+} // config.zen.policies or {};
+policiesJson = writeText "policies.json" (builtins.toJSON { inherit policies;});
+in
 stdenvNoCC.mkDerivation {
   inherit (source) pname version src;
   inherit sourceRoot;
@@ -21,6 +26,9 @@ stdenvNoCC.mkDerivation {
 
     mkdir -p $out/Applications/${sourceRoot}
     cp -r . $out/Applications/${sourceRoot}
+	mkdir -p "$out/Applications/${sourceRoot}/Content/Resources/distribution"
+	cp ${policiesJson} "$out/Applications/${sourceRoot}/Content/Resources/distribution/policies.json"
+
 
     runHook postInstall
   '';
