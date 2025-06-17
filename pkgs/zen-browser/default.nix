@@ -10,6 +10,7 @@
 }:
 let policies = {
 DisableAppUpdate = true;
+DisableTelemetry = true;
 } // config.zen.policies or {};
 policiesJson = writeText "policies.json" (builtins.toJSON { inherit policies;});
 in
