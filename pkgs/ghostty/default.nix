@@ -1,8 +1,8 @@
 {
   lib,
   stdenvNoCC,
-  fetchurl,
   _7zz,
+  sourceRoot,
   makeBinaryWrapper,
   source,
 }:
