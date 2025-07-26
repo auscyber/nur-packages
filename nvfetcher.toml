@@ -1,8 +1,9 @@
 [ghostty]
-src.github = "ghostty-org/ghostty"
+src.github_tag = "ghostty-org/ghostty"
+src.prefix = "v"
 fetch.url = "https://release.files.ghostty.org/$ver/Ghostty.dmg"
 [ghostty-nightly]
-src.github = "ghostty-org/ghostty"
+src.manual = "tip"
 fetch.url = "https://github.com/ghostty-org/ghostty/releases/download/tip/Ghostty.dmg"
 [zen-browser]
 src.github = "zen-browser/desktop"
