@@ -15,6 +15,11 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     _7zz
     makeBinaryWrapper
   ];
+  unpackPhase = lib.optionalString stdenvNoCC.hostPlatform.isDarwin ''
+    runHook preUnpack
+    7zz -snld x $src
+    runHook postUnpack
+  '';
 
   postInstall = ''
 
