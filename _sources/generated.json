@@ -1,9 +1,9 @@
 {
-    "bartender-6": {
+    "bartender-alpha": {
         "cargoLocks": null,
         "date": null,
         "extract": null,
-        "name": "bartender-6",
+        "name": "bartender-alpha",
         "passthru": null,
         "pinned": false,
         "src": {

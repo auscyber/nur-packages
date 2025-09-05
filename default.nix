@@ -35,7 +35,7 @@ in
     sourceRoot = "Twilight.app";
   };
   bartender-alpha = pkgs.callPackage ./pkgs/bartender/default.nix {
-    source = sources.bartender;
+    source = sources.bartender-alpha;
     sourceRoot = ".";
   };
 
