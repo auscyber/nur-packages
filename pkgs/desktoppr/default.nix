@@ -36,6 +36,6 @@ stdenv.mkDerivation {
 
   meta = {
     platforms = [ "aarch64-darwin" ];
-    license = lib.licenses.apache;
+    license = lib.licenses.asl20;
   };
 }
