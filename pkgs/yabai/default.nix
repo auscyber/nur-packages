@@ -2,6 +2,7 @@
   stdenv,
   apple-sdk_15,
   source,
+  installShellFiles,
   xxd,
 }:
 let
@@ -17,9 +18,12 @@ in
 stdenv.mkDerivation (finalAttrs: {
   pname = "yabai";
   inherit (source) version src;
+  nativeBuildInputs = [
+    xxd
+    installShellFiles
+  ];
   buildInputs = [
     apple-sdk_15
-    xxd
   ];
   doInstallCheck = true;
   preferLocalBuild = true;
