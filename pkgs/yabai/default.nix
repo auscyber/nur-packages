@@ -7,10 +7,10 @@
 let
   inherit (stdenv.hostPlatform) system;
 
-  target =
+  replacement =
     {
-      "aarch64-darwin" = "arm64e?";
-      "x86_64-darwin" = "x86_64";
+      "x86_64-darwin" = "arm64e?";
+      "aarch64-darwin" = "x86_64";
     }
     .${system} or (throw "Unsupported system: ${system}");
 in
@@ -28,7 +28,7 @@ stdenv.mkDerivation (finalAttrs: {
     "all"
   ];
   configurePhase = ''
-    sed -i 's/-arch ${target}//g' makefile
+    sed -i 's/-arch ${replacement}//g' makefile
   '';
 
   installPhase = ''
