@@ -1,6 +1,6 @@
 {
   stdenv,
-  apple-sdk_15,
+  apple-sdk_15 ? null,
   source,
   installShellFiles,
   lib,
