@@ -3,6 +3,7 @@
   apple-sdk_15,
   source,
   installShellFiles,
+  lib,
   xxd,
 }:
 let
@@ -43,5 +44,14 @@ stdenv.mkDerivation (finalAttrs: {
 
     runHook postInstall
   '';
+
+  meta = {
+    platforms = [
+      "aarch64-darwin"
+      "x86_64-darwin"
+    ];
+    license = lib.licenses.mit;
+
+  };
 
 })
