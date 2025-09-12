@@ -33,8 +33,9 @@ stdenv.mkDerivation (finalAttrs: {
 
   installPhase = ''
     runHook preInstall
-     mkdir -p $out/bin
-     cp ./bin/yabai $out/bin/yabai
+    mkdir -p $out/bin
+    cp ./bin/yabai $out/bin/yabai
+    installManPage ./doc/yabai.1
 
     runHook postInstall
   '';
