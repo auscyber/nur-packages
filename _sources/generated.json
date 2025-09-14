@@ -1,18 +1,18 @@
 {
-    "bartender-alpha": {
+    "bartender-6": {
         "cargoLocks": null,
         "date": null,
         "extract": null,
-        "name": "bartender-alpha",
+        "name": "bartender-6",
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": "Bartender6-B3.zip",
-            "sha256": "sha256-l92dqp6n1FCNMZLkdwy5xx88xJbY65ndYzwR9ojV5XU=",
+            "name": "Bartender6.dmg",
+            "sha256": "sha256-oJOGgkYRWNNOEMZ8iv+naPTVZxIf3oMb/K4WfvVwsnc=",
             "type": "url",
-            "url": "https://macbartender.com/updates/b6/Bartender6-B3.zip"
+            "url": "https://macbartender.com/B2/updates/6-0-0/Bartender%206.dmg"
         },
-        "version": "B3"
+        "version": "6-0-0"
     },
     "ghostty": {
         "cargoLocks": null,
@@ -38,7 +38,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ccXZCYCutQY+dVhkrzMCHh8ftyDYQnUIcKSJ8J450kY=",
+            "sha256": "sha256-tjdIQDD3/3Rorns656L+cfx3TWpHWmkWl3wV3jjjzEo=",
             "type": "url",
             "url": "https://github.com/ghostty-org/ghostty/releases/download/tip/Ghostty.dmg"
         },
