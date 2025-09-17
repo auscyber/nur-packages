@@ -23,8 +23,20 @@
     version = "tip";
     src = fetchurl {
       url = "https://github.com/ghostty-org/ghostty/releases/download/tip/Ghostty.dmg";
-      sha256 = "sha256-xMjoD/tDTIcgKKqKRrKTnR43UJAXJslpCsRFwHnwKXQ=";
+      sha256 = "sha256-NkEwfNlzO7qNzIHR7dHUFnPbrx4hhDOA3+duDytaza0=";
     };
+  };
+  kanata-vk-agent = {
+    pname = "kanata-vk-agent";
+    version = "63622d603651edf741c60c465209751e32c91261";
+    src = fetchFromGitHub {
+      owner = "devsunb";
+      repo = "kanata-vk-agent";
+      rev = "63622d603651edf741c60c465209751e32c91261";
+      fetchSubmodules = false;
+      sha256 = "sha256-Yxf24imM9d9z17h6mZaTz2XhlNzgFbRqqKiBAmo/Skg=";
+    };
+    date = "2025-02-15";
   };
   karabiner-dk = {
     pname = "karabiner-dk";
