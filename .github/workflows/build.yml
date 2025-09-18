@@ -68,6 +68,7 @@ jobs:
           --allowed-uris https://static.rust-lang.org \
           --option restrict-eval true \
           --option allow-import-from-derivation true \
+          --option download-buffer-size 524288000 \
           --drv-path --show-trace \
           -I nixpkgs=$(nix-instantiate --find-file nixpkgs) \
           -I $PWD
