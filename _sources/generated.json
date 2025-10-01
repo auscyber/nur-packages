@@ -137,11 +137,11 @@
         },
         "version": "v7.1.15"
     },
-    "zen-browser": {
+    "zen": {
         "cargoLocks": null,
         "date": null,
         "extract": null,
-        "name": "zen-browser",
+        "name": "zen",
         "passthru": null,
         "pinned": false,
         "src": {
@@ -152,11 +152,11 @@
         },
         "version": "1.16.2b"
     },
-    "zen-browser-twilight": {
+    "zen-twilight": {
         "cargoLocks": null,
         "date": null,
         "extract": null,
-        "name": "zen-browser-twilight",
+        "name": "zen-twilight",
         "passthru": null,
         "pinned": false,
         "src": {

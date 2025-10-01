@@ -27,12 +27,12 @@ in
     sourceRoot = ".";
   };
   zen-browser = pkgs.callPackage ./pkgs/zen-browser {
-    source = sources.zen-browser;
+    source = sources.zen;
     sourceRoot = "Zen.app";
     applicationName = "Zen";
   };
   zen-browser-twilight = pkgs.callPackage ./pkgs/zen-browser {
-    source = sources.zen-browser-twilight;
+    source = sources.zen-browser;
     applicationName = "Twilight";
     sourceRoot = "Twilight.app";
   };
