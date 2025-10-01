@@ -23,7 +23,7 @@
     version = "tip";
     src = fetchurl {
       url = "https://github.com/ghostty-org/ghostty/releases/download/tip/Ghostty.dmg";
-      sha256 = "sha256-skwes0PfQ5NMwQ1f+dit24xoMx1j0hGJxupmzIjSz3g=";
+      sha256 = "sha256-sdwvw/fg7Uy0VR0EBYcOccDpxIoFizuzJU8BAPKgRSk=";
     };
   };
   kanata-vk-agent = {
