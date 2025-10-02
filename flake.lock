@@ -1,5 +1,35 @@
 {
   "nodes": {
+    "flake-compat": {
+      "locked": {
+        "lastModified": 1733328505,
+        "narHash": "sha256-NeCCThCEP3eCl2l/+27kNNK7QrwZB1IJCrXfrbv5oqU=",
+        "rev": "ff81ac966bb2cae68946d5ed5fc4994f96d0ffec",
+        "revCount": 69,
+        "type": "tarball",
+        "url": "https://api.flakehub.com/f/pinned/edolstra/flake-compat/1.1.0/01948eb7-9cba-704f-bbf3-3fa956735b52/source.tar.gz?rev=ff81ac966bb2cae68946d5ed5fc4994f96d0ffec&revCount=69"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://flakehub.com/f/edolstra/flake-compat/1.tar.gz"
+      }
+    },
+    "karabiner-branch": {
+      "locked": {
+        "lastModified": 1759370412,
+        "narHash": "sha256-iomCBB0a6GpnFUWl8JthnSYYxdoekW6rqx5AqKl1bXs=",
+        "owner": "auscyber",
+        "repo": "nixpkgs",
+        "rev": "0745c0ae099609ffa79ceb41045d46851ffe5302",
+        "type": "github"
+      },
+      "original": {
+        "owner": "auscyber",
+        "ref": "karabiner-driver-fix",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1758916627,
@@ -18,6 +48,8 @@
     },
     "root": {
       "inputs": {
+        "flake-compat": "flake-compat",
+        "karabiner-branch": "karabiner-branch",
         "nixpkgs": "nixpkgs"
       }
     }

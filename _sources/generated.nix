@@ -23,7 +23,7 @@
     version = "tip";
     src = fetchurl {
       url = "https://github.com/ghostty-org/ghostty/releases/download/tip/Ghostty.dmg";
-      sha256 = "sha256-sdwvw/fg7Uy0VR0EBYcOccDpxIoFizuzJU8BAPKgRSk=";
+      sha256 = "sha256-raD3kNXo/TOTROuozYLPvXC8dPvAsTc2mumi+F9FkNQ=";
     };
   };
   helium-linux = {
@@ -45,6 +45,18 @@
       sha256 = "sha256-3j4souWY+4EGPSQR6uURjyqu3bkB5G9xuJbvOk9cZd8=";
     };
   };
+  kanata = {
+    pname = "kanata";
+    version = "25193104aad589e6df4a4ec700750ff8e18d27bd";
+    src = fetchFromGitHub {
+      owner = "jtroo";
+      repo = "kanata";
+      rev = "25193104aad589e6df4a4ec700750ff8e18d27bd";
+      fetchSubmodules = false;
+      sha256 = "sha256-vnz3/GkQm3PE3mA97jLbvVouQot6tOylpdJXRfpSFrA=";
+    };
+    date = "2025-10-01";
+  };
   kanata-vk-agent = {
     pname = "kanata-vk-agent";
     version = "63622d603651edf741c60c465209751e32c91261";
@@ -60,9 +72,9 @@
   karabiner-dk = {
     pname = "karabiner-dk";
     version = "6.3.0";
-    src = fetchurl {
-      url = "https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/releases/download/v6.3.0/Karabiner-DriverKit-VirtualHIDDevice-6.3.0.pkg";
-      sha256 = "sha256-PLClGJX6ess44N3AI+BWUhl3/p+kUC9vtObbDhL8wPk=";
+    src = fetchTarball {
+      url = "https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/archive/v6.3.0.tar.gz";
+      sha256 = "sha256-nLu//qG3RzrEDWvNmSJH7YmgVgiTiYTg5FaliiEtdpo=";
     };
   };
   yabai = {

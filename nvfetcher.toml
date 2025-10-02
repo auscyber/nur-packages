@@ -24,8 +24,13 @@ fetch.github = "koekeishiya/yabai"
 [karabiner-dk]
 src.github = "pqrs-org/Karabiner-DriverKit-VirtualHIDDevice"
 src.prefix = "v"
-fetch.url = "https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/releases/download/v$ver/Karabiner-DriverKit-VirtualHIDDevice-$ver.pkg"
+fetch.tarball = "https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/archive/v$ver.tar.gz"
 
+[kanata]
+src.git = "https://github.com/jtroo/kanata.git"
+src.branch = "main"
+fetch.github = "jtroo/kanata"
+cargo_lock = ["Cargo.lock"]
 [kanata-vk-agent]
 src.git = "https://github.com/devsunb/kanata-vk-agent"
 fetch.github = 'devsunb/kanata-vk-agent'

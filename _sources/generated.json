@@ -38,7 +38,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-sdwvw/fg7Uy0VR0EBYcOccDpxIoFizuzJU8BAPKgRSk=",
+            "sha256": "sha256-raD3kNXo/TOTROuozYLPvXC8dPvAsTc2mumi+F9FkNQ=",
             "type": "url",
             "url": "https://github.com/ghostty-org/ghostty/releases/download/tip/Ghostty.dmg"
         },
@@ -80,6 +80,27 @@
         },
         "version": "0.4.13.1"
     },
+    "kanata": {
+        "cargoLocks": null,
+        "date": "2025-10-01",
+        "extract": null,
+        "name": "kanata",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "jtroo",
+            "repo": "kanata",
+            "rev": "25193104aad589e6df4a4ec700750ff8e18d27bd",
+            "sha256": "sha256-vnz3/GkQm3PE3mA97jLbvVouQot6tOylpdJXRfpSFrA=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "25193104aad589e6df4a4ec700750ff8e18d27bd"
+    },
     "kanata-vk-agent": {
         "cargoLocks": null,
         "date": "2025-02-15",
@@ -109,10 +130,9 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "name": null,
-            "sha256": "sha256-PLClGJX6ess44N3AI+BWUhl3/p+kUC9vtObbDhL8wPk=",
-            "type": "url",
-            "url": "https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/releases/download/v6.3.0/Karabiner-DriverKit-VirtualHIDDevice-6.3.0.pkg"
+            "sha256": "sha256-nLu//qG3RzrEDWvNmSJH7YmgVgiTiYTg5FaliiEtdpo=",
+            "type": "tarball",
+            "url": "https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/archive/v6.3.0.tar.gz"
         },
         "version": "6.3.0"
     },
