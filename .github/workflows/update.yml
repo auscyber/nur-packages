@@ -24,7 +24,7 @@ jobs:
         extra_nix_config: |
           experimental-features = nix-command flakes
     - name: Update sources
-      run: nix run nixpkgs#nvfetcher
+      run: nix run berberman#nvfetcher
     - name: update docs
       run: nix run .#docs
     - name: Create Pull Request

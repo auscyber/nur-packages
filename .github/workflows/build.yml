@@ -62,10 +62,12 @@ jobs:
         name: ${{ matrix.cachixName }}
         signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+    - name: instantiate flake
+      run: nix flake show
     - name: Check evaluation
       run: |
         nix-env -f . -qa \* --meta --xml \
-          --allowed-uris https://static.rust-lang.org \
+          --allowed-uris 'https://static.rust-lang.org https://git.lix.systems https://github.com github:' \
           --option restrict-eval true \
           --option allow-import-from-derivation true \
           --option download-buffer-size 624288000 \
