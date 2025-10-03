@@ -23,7 +23,7 @@
     version = "tip";
     src = fetchurl {
       url = "https://github.com/ghostty-org/ghostty/releases/download/tip/Ghostty.dmg";
-      sha256 = "sha256-raD3kNXo/TOTROuozYLPvXC8dPvAsTc2mumi+F9FkNQ=";
+      sha256 = "sha256-dNzqFwXyTl6wq9VSSnh1gLAi5+2Dn8aQ4Ae56LoQqrs=";
     };
   };
   helium-linux = {
