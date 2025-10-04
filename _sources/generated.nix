@@ -23,18 +23,18 @@
     version = "tip";
     src = fetchurl {
       url = "https://github.com/ghostty-org/ghostty/releases/download/tip/Ghostty.dmg";
-      sha256 = "sha256-KiQ3MmFNwiEd6nlY1Jc51clkvScR9PopXTYDg39d4Ho=";
+      sha256 = "sha256-MnSttkuq4kSeZ9+T1CJau+wqBmjCWWVYfm7qyxG3TMM=";
     };
   };
   helium-linux = {
     pname = "helium-linux";
-    version = "0.4.12.1";
+    version = "0.5.1.1";
     src = fetchFromGitHub {
       owner = "imputnet";
       repo = "helium-linux";
-      rev = "0.4.12.1";
+      rev = "0.5.1.1";
       fetchSubmodules = false;
-      sha256 = "sha256-9+hhI45aEMS2HYX8QLWJvx7ll2XiwcVowTX0qRXOc8o=";
+      sha256 = "sha256-SNZgFhObIVeGfG0j4ZMDk+XbBhQPe9U/BIBbjA12s70=";
     };
   };
   helium-macos = {
