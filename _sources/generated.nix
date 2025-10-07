@@ -12,10 +12,10 @@
   };
   ghostty = {
     pname = "ghostty";
-    version = "1.2.0";
+    version = "1.2.1";
     src = fetchurl {
-      url = "https://release.files.ghostty.org/1.2.0/Ghostty.dmg";
-      sha256 = "sha256-QyHKQ00iRxWS6GwPfRAi9RDSlgX/50N0+MASmnPGAo4=";
+      url = "https://release.files.ghostty.org/1.2.1/Ghostty.dmg";
+      sha256 = "sha256-rFXYJxz6UPE8KKhrPLvksLLvxUdlZzvoxLGhIF3hTGM=";
     };
   };
   ghostty-nightly = {
@@ -23,7 +23,7 @@
     version = "tip";
     src = fetchurl {
       url = "https://github.com/ghostty-org/ghostty/releases/download/tip/Ghostty.dmg";
-      sha256 = "sha256-zb4tke8D/u6QFoL62yQWgrE83YcP9r5TIeq0Mk7xJE8=";
+      sha256 = "sha256-0h9UuMX/jEKZtBt7LfuiNhye3gm9PPuxkxYz2hUjpNg=";
     };
   };
   helium-linux = {
@@ -101,7 +101,7 @@
     version = "1.16.3b";
     src = fetchurl {
       url = "https://github.com/zen-browser/desktop/releases/download/twilight/zen.macos-universal.dmg";
-      sha256 = "sha256-qW87nN8ZNeDvbDyLFsZfrPPwOz0b2iqwQ/aNSxi30iE=";
+      sha256 = "sha256-lzJYnn7R0mwR2LJezTwgYR2jjGtsuD6pFOnJEegqs04=";
     };
   };
 }
