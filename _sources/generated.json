@@ -58,12 +58,12 @@
             "name": null,
             "owner": "imputnet",
             "repo": "helium-linux",
-            "rev": "0.5.2.1",
+            "rev": "0.5.3.1",
             "sha256": "sha256-SNZgFhObIVeGfG0j4ZMDk+XbBhQPe9U/BIBbjA12s70=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "0.5.2.1"
+        "version": "0.5.3.1"
     },
     "helium-macos": {
         "cargoLocks": null,
@@ -74,11 +74,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-gw5ziIX9oYSZ0HnMgTNpvdILhsoO5aF+2l/KQzPoPHQ=",
+            "sha256": "sha256-UGbsKjq/KDZF4VIAMFf6QdOtSR+/YbTAMp1KYeFFhls=",
             "type": "url",
-            "url": "https://github.com/imputnet/helium-macos/releases/download/0.5.2.1/helium_0.5.2.1_arm64-macos.dmg"
+            "url": "https://github.com/imputnet/helium-macos/releases/download/0.5.3.1/helium_0.5.3.1_arm64-macos.dmg"
         },
-        "version": "0.5.2.1"
+        "version": "0.5.3.1"
     },
     "kanata": {
         "cargoLocks": null,
