@@ -28,21 +28,21 @@
   };
   helium-linux = {
     pname = "helium-linux";
-    version = "0.5.2.1";
+    version = "0.5.3.1";
     src = fetchFromGitHub {
       owner = "imputnet";
       repo = "helium-linux";
-      rev = "0.5.2.1";
+      rev = "0.5.3.1";
       fetchSubmodules = false;
       sha256 = "sha256-SNZgFhObIVeGfG0j4ZMDk+XbBhQPe9U/BIBbjA12s70=";
     };
   };
   helium-macos = {
     pname = "helium-macos";
-    version = "0.5.2.1";
+    version = "0.5.3.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-macos/releases/download/0.5.2.1/helium_0.5.2.1_arm64-macos.dmg";
-      sha256 = "sha256-gw5ziIX9oYSZ0HnMgTNpvdILhsoO5aF+2l/KQzPoPHQ=";
+      url = "https://github.com/imputnet/helium-macos/releases/download/0.5.3.1/helium_0.5.3.1_arm64-macos.dmg";
+      sha256 = "sha256-UGbsKjq/KDZF4VIAMFf6QdOtSR+/YbTAMp1KYeFFhls=";
     };
   };
   kanata = {
