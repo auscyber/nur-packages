@@ -12,10 +12,10 @@
   };
   ghostty = {
     pname = "ghostty";
-    version = "1.2.1";
+    version = "1.2.2";
     src = fetchurl {
-      url = "https://release.files.ghostty.org/1.2.1/Ghostty.dmg";
-      sha256 = "sha256-rFXYJxz6UPE8KKhrPLvksLLvxUdlZzvoxLGhIF3hTGM=";
+      url = "https://release.files.ghostty.org/1.2.2/Ghostty.dmg";
+      sha256 = "sha256-gSuOOWZUzKKihCGmqEnieJJ8iP4xFeoSQIL536ka454=";
     };
   };
   ghostty-nightly = {
@@ -28,11 +28,11 @@
   };
   helium-linux = {
     pname = "helium-linux";
-    version = "0.5.3.1";
+    version = "0.5.5.1";
     src = fetchFromGitHub {
       owner = "imputnet";
       repo = "helium-linux";
-      rev = "0.5.3.1";
+      rev = "0.5.5.1";
       fetchSubmodules = false;
       sha256 = "sha256-SNZgFhObIVeGfG0j4ZMDk+XbBhQPe9U/BIBbjA12s70=";
     };
@@ -90,18 +90,18 @@
   };
   zen = {
     pname = "zen";
-    version = "1.16.3b";
+    version = "1.16.4b";
     src = fetchurl {
-      url = "https://github.com/zen-browser/desktop/releases/download/1.16.3b/zen.macos-universal.dmg";
-      sha256 = "sha256-mWxTEYS8ClA8qQWVgr09oX3WWAh/xFK+AxkY2p/URFI=";
+      url = "https://github.com/zen-browser/desktop/releases/download/1.16.4b/zen.macos-universal.dmg";
+      sha256 = "sha256-jGOyE26JntBMQBu7w+pwHpKMFCd+lx6SyjapX0KCQUc=";
     };
   };
   zen-twilight = {
     pname = "zen-twilight";
-    version = "1.16.3b";
+    version = "1.16.4b";
     src = fetchurl {
       url = "https://github.com/zen-browser/desktop/releases/download/twilight/zen.macos-universal.dmg";
-      sha256 = "sha256-qJGa5kCSefz3B3CbNub5mGnzLTYeSbmYuQzVU6iwG6Q=";
+      sha256 = "sha256-DrtQ4ReiHWgL00x1Y9UDg9tVJC6yzH49lkxxbT+h+jM=";
     };
   };
 }
