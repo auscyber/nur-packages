@@ -14,6 +14,7 @@ let
   lib = pkgs.lib;
   sources = pkgs.callPackage ./_sources/generated.nix { };
   system = pkgs.stdenv.hostPlatform.system;
+  toolchain = inputs.fenix.packages.${system}.minimal.toolchain;
   makeOverridable =
     pkg: attrF:
     (pkg.override (
@@ -70,15 +71,26 @@ in
   };
   desktoppr = builtins.trace "desktoppr is now in nixpkgs" pkgs.callPackage ./pkgs/desktoppr {
   };
-  kanata = makeOverridable karabiner-branch.kanata (oldAttrs: {
-    inherit (sources.kanata) src version;
-    passthru.darwinDriverVersion = "6.2.0";
-    doCheck = false;
-    cargoDeps = pkgs.rustPlatform.importCargoLock sources.kanata.cargoLock."Cargo.lock";
-  });
-  karabiner-dk = makeOverridable karabiner-branch.karabiner-dk (oldAttrs: {
-    sourceVersion = lib.strings.removePrefix "v" sources.karabiner-dk.version;
-  });
+  kanata =
+    (makeOverridable karabiner-branch.kanata (oldAttrs: {
+      inherit (sources.kanata) src version;
+      passthru = oldAttrs.passthru // {
+        darwinDriverVersion = "6.2.0";
+      };
+      doInstallCheck = false;
+      cargoDeps = pkgs.rustPlatform.importCargoLock sources.kanata.cargoLock."Cargo.lock";
+    })).override
+      {
+        rustPlatform = pkgs.makeRustPlatform {
+          rustc = toolchain;
+          cargo = toolchain;
+        };
+      };
+  karabiner-dk = (
+    makeOverridable karabiner-branch.karabiner-dk (oldAttrs: {
+      sourceVersion = lib.strings.removePrefix "v" sources.karabiner-dk.version;
+    })
+  );
   kanata-vk-agent = pkgs.callPackage ./pkgs/kanata-vk-agent {
     source = sources.kanata-vk-agent;
   };
