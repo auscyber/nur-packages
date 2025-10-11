@@ -2,25 +2,18 @@
   pkgs ? import <nixpkgs> { },
 }:
 let
-  inputs = (
-    let
-      lockFile = builtins.fromJSON (builtins.readFile ./flake.lock);
-      flake-compat-node = lockFile.nodes.${lockFile.nodes.root.inputs.flake-compat};
-      flake-compat = builtins.fetchTarball {
-        inherit (flake-compat-node.locked) url;
-        sha256 = flake-compat-node.locked.narHash;
-      };
-
-      flake = (
-        import flake-compat {
-          copySourceTreeToStore = false;
-          useBuiltinsFetchTree = true;
-          src = ./.;
-        }
-      );
-    in
-    flake.inputs
-  );
-
+  inputs =
+    (import (
+      let
+        lock = builtins.fromJSON (builtins.readFile ./flake.lock);
+        nodeName = lock.nodes.root.inputs.flake-compat;
+      in
+      builtins.fetchTarball {
+        url =
+          lock.nodes.${nodeName}.locked.url
+            or "https://github.com/edolstra/flake-compat/archive/${lock.nodes.${nodeName}.locked.rev}.tar.gz";
+        sha256 = lock.nodes.${nodeName}.locked.narHash;
+      }
+    ) { src = ./.; }).defaultNix.inputs;
 in
 import ./packages.nix { inherit pkgs inputs; }

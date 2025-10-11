@@ -4,7 +4,7 @@
   inputs.karabiner-branch.url = "github:auscyber/nixpkgs/karabiner-driver-fix";
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
   inputs.fenix.url = "github:nix-community/fenix";
-  inputs.flake-compat.url = "https://git.lix.systems/lix-project/flake-compat/archive/main.tar.gz";
+  inputs.flake-compat.url = "https://flakehub.com/f/edolstra/flake-compat/1.tar.gz";
   outputs =
     inputs@{ self, nixpkgs, ... }:
     let
