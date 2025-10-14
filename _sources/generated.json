@@ -38,7 +38,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-DRm7IRKnJ8YBTYnKNgUpbN94kSjIbiReJj37sHyWrgk=",
+            "sha256": "sha256-J4IWcBmRUsxjTHT+7VUGMlGHiCcck2YI2N/jCBnDc5A=",
             "type": "url",
             "url": "https://github.com/ghostty-org/ghostty/releases/download/tip/Ghostty.dmg"
         },
@@ -83,11 +83,11 @@
     "kanata": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-vnz3_GkQm3PE3mA97jLbvVouQot6tOylpdJXRfpSFrA=/Cargo.lock",
+                "sha256-aQDeMfkb6wjwQ40wP0XE2JcaOrHArvItVfB6QsmVpuc=/Cargo.lock",
                 {}
             ]
         },
-        "date": "2025-10-01",
+        "date": "2025-10-11",
         "extract": null,
         "name": "kanata",
         "passthru": null,
@@ -99,12 +99,12 @@
             "name": null,
             "owner": "jtroo",
             "repo": "kanata",
-            "rev": "25193104aad589e6df4a4ec700750ff8e18d27bd",
-            "sha256": "sha256-vnz3/GkQm3PE3mA97jLbvVouQot6tOylpdJXRfpSFrA=",
+            "rev": "26640cacd9a5ea163505e6660d466b0b8a0791e3",
+            "sha256": "sha256-aQDeMfkb6wjwQ40wP0XE2JcaOrHArvItVfB6QsmVpuc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "25193104aad589e6df4a4ec700750ff8e18d27bd"
+        "version": "26640cacd9a5ea163505e6660d466b0b8a0791e3"
     },
     "kanata-vk-agent": {
         "cargoLock": null,
@@ -141,12 +141,12 @@
             "name": null,
             "owner": "pqrs-org",
             "repo": "Karabiner-DriverKit-VirtualHIDDevice",
-            "rev": "v6.3.0",
-            "sha256": "sha256-nLu//qG3RzrEDWvNmSJH7YmgVgiTiYTg5FaliiEtdpo=",
+            "rev": "v6.4.0",
+            "sha256": "sha256-NlzIb9srGVdYUOAOL8W9UJZVrf5IQOm6TVjm73epemM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.3.0"
+        "version": "v6.4.0"
     },
     "yabai": {
         "cargoLock": null,

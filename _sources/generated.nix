@@ -28,7 +28,7 @@
     version = "tip";
     src = fetchurl {
       url = "https://github.com/ghostty-org/ghostty/releases/download/tip/Ghostty.dmg";
-      sha256 = "sha256-DRm7IRKnJ8YBTYnKNgUpbN94kSjIbiReJj37sHyWrgk=";
+      sha256 = "sha256-J4IWcBmRUsxjTHT+7VUGMlGHiCcck2YI2N/jCBnDc5A=";
     };
   };
   helium-linux = {
@@ -52,21 +52,21 @@
   };
   kanata = {
     pname = "kanata";
-    version = "25193104aad589e6df4a4ec700750ff8e18d27bd";
+    version = "26640cacd9a5ea163505e6660d466b0b8a0791e3";
     src = fetchFromGitHub {
       owner = "jtroo";
       repo = "kanata";
-      rev = "25193104aad589e6df4a4ec700750ff8e18d27bd";
+      rev = "26640cacd9a5ea163505e6660d466b0b8a0791e3";
       fetchSubmodules = false;
-      sha256 = "sha256-vnz3/GkQm3PE3mA97jLbvVouQot6tOylpdJXRfpSFrA=";
+      sha256 = "sha256-aQDeMfkb6wjwQ40wP0XE2JcaOrHArvItVfB6QsmVpuc=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-vnz3_GkQm3PE3mA97jLbvVouQot6tOylpdJXRfpSFrA=/Cargo.lock";
+      lockFile = ./. + "/sha256-aQDeMfkb6wjwQ40wP0XE2JcaOrHArvItVfB6QsmVpuc=/Cargo.lock";
       outputHashes = {
         
       };
     };
-    date = "2025-10-01";
+    date = "2025-10-11";
   };
   kanata-vk-agent = {
     pname = "kanata-vk-agent";
@@ -82,13 +82,13 @@
   };
   karabiner-dk = {
     pname = "karabiner-dk";
-    version = "v6.3.0";
+    version = "v6.4.0";
     src = fetchFromGitHub {
       owner = "pqrs-org";
       repo = "Karabiner-DriverKit-VirtualHIDDevice";
-      rev = "v6.3.0";
+      rev = "v6.4.0";
       fetchSubmodules = false;
-      sha256 = "sha256-nLu//qG3RzrEDWvNmSJH7YmgVgiTiYTg5FaliiEtdpo=";
+      sha256 = "sha256-NlzIb9srGVdYUOAOL8W9UJZVrf5IQOm6TVjm73epemM=";
     };
   };
   yabai = {

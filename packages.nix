@@ -28,7 +28,7 @@ let
     ).overrideAttrs
       attrF;
 
-  karabiner-branch = import inputs.karabiner-branch {
+  karabiner-branch = import inputs.nixpkgs-master {
     inherit system;
     # The version of Karabiner-Elements to use.
     # You can override the default version here if you want.
@@ -86,11 +86,8 @@ in
           cargo = toolchain;
         };
       };
-  karabiner-dk = (
-    makeOverridable karabiner-branch.karabiner-dk (oldAttrs: {
-      sourceVersion = lib.strings.removePrefix "v" sources.karabiner-dk.version;
-    })
-  );
+  karabiner-dk = karabiner-branch.karabiner-dk;
+
   kanata-vk-agent = pkgs.callPackage ./pkgs/kanata-vk-agent {
     source = sources.kanata-vk-agent;
   };

@@ -67,22 +67,6 @@
         "type": "github"
       }
     },
-    "karabiner-branch": {
-      "locked": {
-        "lastModified": 1759976196,
-        "narHash": "sha256-QIvvZB/biVeFM+fk3lFpfzAoBAlXnWmLvAAMOFs2f8c=",
-        "owner": "auscyber",
-        "repo": "nixpkgs",
-        "rev": "0974a4e5ac554b0af90071a1039e36813dc536ea",
-        "type": "github"
-      },
-      "original": {
-        "owner": "auscyber",
-        "ref": "karabiner-driver-fix",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1760038930,
@@ -95,6 +79,21 @@
       "original": {
         "owner": "nixos",
         "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-master": {
+      "locked": {
+        "lastModified": 1760411424,
+        "narHash": "sha256-cS2sY1Q1tBktCzNFPRDKFpUmcMG+79rm6nziZzdQQds=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "be1af346bb987be0d5b5c3146bf1d253940a4a4f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -155,8 +154,8 @@
       "inputs": {
         "fenix": "fenix",
         "flake-compat": "flake-compat",
-        "karabiner-branch": "karabiner-branch",
         "nixpkgs": "nixpkgs_2",
+        "nixpkgs-master": "nixpkgs-master",
         "nvfetcher": "nvfetcher"
       }
     },
