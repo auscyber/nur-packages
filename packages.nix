@@ -46,7 +46,11 @@ in
     sourceRoot = ".";
   };
   ghostty-nightly-bin = pkgs.callPackage ./pkgs/ghostty {
-    source = sources.ghostty-nightly;
+    isNightly = true;
+    source = {
+      inherit (sources.ghostty-nightly) version pname;
+      src = ./_sources + "/${sources.ghostty-nightly.src.outputHash}";
+    };
     sourceRoot = ".";
   };
   zen-browser = pkgs.callPackage ./pkgs/zen-browser {
