@@ -19,11 +19,11 @@
     pname = "flake-compat";
     version = "flake-compat";
     src = fetchTarball {
-      url = "https://flakehub.com/f/edolstra/flake-compat/1.tar.gz";
-      sha256 = "sha256-NeCCThCEP3eCl2l/+27kNNK7QrwZB1IJCrXfrbv5oqU=";
+      url = "https://git.lix.systems/lix-project/flake-compat/archive/main.tar.gz";
+      sha256 = "sha256-NKw96t+BgHIYzHUjkTK95FqYRVKB8DHpVhefWSz/kTw=";
     };
     extract = {
-      "default.nix" = ./. + "/sha256-NeCCThCEP3eCl2l_+27kNNK7QrwZB1IJCrXfrbv5oqU=/default.nix";
+      "default.nix" = ./. + "/sha256-NKw96t+BgHIYzHUjkTK95FqYRVKB8DHpVhefWSz_kTw=/default.nix";
     };
   };
   ghostty = {
