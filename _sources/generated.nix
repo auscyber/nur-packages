@@ -629,16 +629,16 @@
   };
   kanata = {
     pname = "kanata";
-    version = "v1.9.0";
+    version = "v1.10.0-prerelease-2";
     src = fetchFromGitHub {
       owner = "jtroo";
       repo = "kanata";
-      rev = "v1.9.0";
+      rev = "v1.10.0-prerelease-2";
       fetchSubmodules = false;
-      sha256 = "sha256-xxAIwiwCQugDXpWga9bQ9ZGfem46rwDlmf64dX/tw7g=";
+      sha256 = "sha256-aQDeMfkb6wjwQ40wP0XE2JcaOrHArvItVfB6QsmVpuc=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-xxAIwiwCQugDXpWga9bQ9ZGfem46rwDlmf64dX_tw7g=/Cargo.lock";
+      lockFile = ./. + "/sha256-aQDeMfkb6wjwQ40wP0XE2JcaOrHArvItVfB6QsmVpuc=/Cargo.lock";
       outputHashes = {
         
       };

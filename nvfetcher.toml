@@ -29,8 +29,7 @@ fetch.github = "pqrs-org/Karabiner-DriverKit-VirtualHIDDevice"
 
 [kanata]
 src.github_tag = "jtroo/kanata"
-src.include_regex = ".*"
-src.ignored = ""
+src.sort_version_key = "awesomeversion"
 fetch.github = "jtroo/kanata"
 cargo_lock = ["Cargo.lock"]
 [kanata-vk-agent]

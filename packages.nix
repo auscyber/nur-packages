@@ -18,7 +18,7 @@ let
   };
   sources = pkgs.callPackage ./_sources/generated.nix { };
   system = pkgs.stdenv.hostPlatform.system;
-  toolchain = builtins.tryEval inputs.fenix.packages.${system}.minimal.toolchain;
+  toolchain = (pkgs.fetchtree inputs.fenix.info).packages.${system}.minimal.toolchain;
 
 in
 lib.fix (self: {
@@ -62,14 +62,7 @@ lib.fix (self: {
   };
   kanata = (
     (pkgs.callPackage sources.nixpkgs-master.extract."pkgs/by-name/ka/kanata/package.nix" {
-      rustPlatform =
-        if toolchain ? value then
-          pkgs.makeRustPlatform {
-            rustc = toolchain.value;
-            cargo = toolchain.value;
-          }
-        else
-          pkgs.rustPlatform;
+
       inherit (self) karabiner-dk;
       inherit lib;
     }).overrideAttrs
