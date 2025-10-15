@@ -667,6 +667,19 @@
       sha256 = "sha256-NlzIb9srGVdYUOAOL8W9UJZVrf5IQOm6TVjm73epemM=";
     };
   };
+  nixpkgs-master = {
+    pname = "nixpkgs-master";
+    version = "nixpkgs-master";
+    src = fetchTarball {
+      url = "https://github.com/NixOS/nixpkgs/archive/refs/heads/master.tar.gz";
+      sha256 = "sha256-qwCBq4Ow8zAfx0QAPMPFEIj+6mB7SjPXthVjYbpvgME=";
+    };
+    extract = {
+      "pkgs/by-name/ka/karabiner-dk/package.nix" = ./. + "/sha256-qwCBq4Ow8zAfx0QAPMPFEIj+6mB7SjPXthVjYbpvgME=/pkgs/by-name/ka/karabiner-dk/package.nix";
+      "pkgs/by-name/ka/kanata/update.sh" = ./. + "/sha256-qwCBq4Ow8zAfx0QAPMPFEIj+6mB7SjPXthVjYbpvgME=/pkgs/by-name/ka/kanata/update.sh";
+      "pkgs/by-name/ka/kanata/package.nix" = ./. + "/sha256-qwCBq4Ow8zAfx0QAPMPFEIj+6mB7SjPXthVjYbpvgME=/pkgs/by-name/ka/kanata/package.nix";
+    };
+  };
   yabai = {
     pname = "yabai";
     version = "v7.1.16";

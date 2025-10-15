@@ -728,6 +728,24 @@
         },
         "version": "v6.4.0"
     },
+    "nixpkgs-master": {
+        "cargoLock": null,
+        "date": null,
+        "extract": {
+            "pkgs/by-name/ka/kanata/package.nix": "sha256-qwCBq4Ow8zAfx0QAPMPFEIj+6mB7SjPXthVjYbpvgME=/pkgs/by-name/ka/kanata/package.nix",
+            "pkgs/by-name/ka/kanata/update.sh": "sha256-qwCBq4Ow8zAfx0QAPMPFEIj+6mB7SjPXthVjYbpvgME=/pkgs/by-name/ka/kanata/update.sh",
+            "pkgs/by-name/ka/karabiner-dk/package.nix": "sha256-qwCBq4Ow8zAfx0QAPMPFEIj+6mB7SjPXthVjYbpvgME=/pkgs/by-name/ka/karabiner-dk/package.nix"
+        },
+        "name": "nixpkgs-master",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-qwCBq4Ow8zAfx0QAPMPFEIj+6mB7SjPXthVjYbpvgME=",
+            "type": "tarball",
+            "url": "https://github.com/NixOS/nixpkgs/archive/refs/heads/master.tar.gz"
+        },
+        "version": "nixpkgs-master"
+    },
     "yabai": {
         "cargoLock": null,
         "date": null,

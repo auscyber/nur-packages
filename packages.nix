@@ -11,32 +11,17 @@
   pkgs,
 }:
 let
-  lib = pkgs.lib;
+  lib = pkgs.lib.overrideExisting pkgs.lib {
+    maintainers = pkgs.lib.maintainers // {
+      auscyber = "auscyber";
+    };
+  };
   sources = pkgs.callPackage ./_sources/generated.nix { };
   system = pkgs.stdenv.hostPlatform.system;
   toolchain = inputs.fenix.packages.${system}.minimal.toolchain;
-  makeOverridable =
-    pkg: attrF:
-    (pkg.override (
-      attrs:
-      (pkgs.lib.intersectAttrs pkg.override.__functionArgs pkgs)
-      // {
-        lib = attrs.lib;
-      }
-    )
 
-    ).overrideAttrs
-      attrF;
-
-  karabiner-branch = import inputs.nixpkgs-master {
-    inherit system;
-    # The version of Karabiner-Elements to use.
-    # You can override the default version here if you want.
-    # version = "14.6.0";
-  };
 in
-
-{
+lib.fix (self: {
   # The `lib`, `modules`, and `overlays` names are special
   lib = import ./lib { inherit pkgs; }; # functions
   modules = import ./modules; # NixOS modules
@@ -75,22 +60,28 @@ in
   };
   desktoppr = builtins.trace "desktoppr is now in nixpkgs" pkgs.callPackage ./pkgs/desktoppr {
   };
-  kanata =
-    (makeOverridable karabiner-branch.kanata (oldAttrs: {
-      inherit (sources.kanata) src version;
-      passthru = oldAttrs.passthru // {
-        darwinDriverVersion = "6.2.0";
+  kanata = (
+    (pkgs.callPackage sources.nixpkgs-master.extract."pkgs/by-name/ka/kanata/package.nix" {
+      rustPlatform = pkgs.makeRustPlatform {
+        rustc = toolchain;
+        cargo = toolchain;
       };
-      doInstallCheck = false;
-      cargoDeps = pkgs.rustPlatform.importCargoLock sources.kanata.cargoLock."Cargo.lock";
-    })).override
-      {
-        rustPlatform = pkgs.makeRustPlatform {
-          rustc = toolchain;
-          cargo = toolchain;
+      inherit (self) karabiner-dk;
+      inherit lib;
+    }).overrideAttrs
+      (oldAttrs: {
+
+        inherit (sources.kanata) src version;
+        passthru = oldAttrs.passthru // {
+          darwinDriverVersion = "6.2.0";
         };
-      };
-  karabiner-dk = karabiner-branch.karabiner-dk;
+        doInstallCheck = false;
+        cargoDeps = pkgs.rustPlatform.importCargoLock sources.kanata.cargoLock."Cargo.lock";
+      })
+  );
+  karabiner-dk =
+    pkgs.callPackage sources.nixpkgs-master.extract."pkgs/by-name/ka/karabiner-dk/package.nix"
+      { inherit lib; };
 
   kanata-vk-agent = pkgs.callPackage ./pkgs/kanata-vk-agent {
     source = sources.kanata-vk-agent;
@@ -98,4 +89,4 @@ in
 
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
-}
+})
