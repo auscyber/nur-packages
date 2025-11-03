@@ -25,6 +25,9 @@ jobs:
           experimental-features = nix-command flakes
     - name: Update flake inputs
       run: nix flake update
+    - name: update docs
+      run: nix run .#docs
+
 
 
     - name: Create Pull Request
