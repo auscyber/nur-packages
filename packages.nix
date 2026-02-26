@@ -76,9 +76,7 @@ lib.fix (self: {
   kanata-tray = pkgs.callPackage ./pkgs/kanata-tray {
     source = sources.kanata-tray;
   };
-  musly = pkgs.callPackage ./pkgs/musly {
-  source = sources.musly;
-  };
+
 
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
