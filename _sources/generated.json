@@ -54,7 +54,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-rzuE082LklzW7Tz1eDTRDyms/hiViySuX7ucoPIDOo8=",
+            "sha256": "sha256-KEzSxCyqFHjIKGgzLjqFM2V9mmr6IHq3pC2b1J9/crw=",
             "type": "url",
             "url": "https://github.com/ghostty-org/ghostty/releases/download/tip/ghostty-macos-universal.zip"
         },
@@ -74,12 +74,12 @@
             "name": null,
             "owner": "imputnet",
             "repo": "helium-linux",
-            "rev": "0.7.9.1",
-            "sha256": "sha256-7bwEawrQWwtQXfg4u1dkJXoex1HE8chwn2FMtPkaidQ=",
+            "rev": "0.9.4.1",
+            "sha256": "sha256-z/gnlRGy9Xo/j7lfN3uwmlAPhyKpYwMhGvf/GN6Vwl0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "0.7.9.1"
+        "version": "0.9.4.1"
     },
     "helium-macos": {
         "cargoLock": null,
@@ -90,16 +90,16 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-swFxWgHONhdzfLpwGVoje/ceTwCZFmoO3FBeIbjqIaY=",
+            "sha256": "sha256-miPsputiNQwAm867O5I+OBZAr52OzzIFD1UHMzWDMVQ=",
             "type": "url",
-            "url": "https://github.com/imputnet/helium-macos/releases/download/0.7.9.1/helium_0.7.9.1_arm64-macos.dmg"
+            "url": "https://github.com/imputnet/helium-macos/releases/download/0.9.4.1/helium_0.9.4.1_arm64-macos.dmg"
         },
-        "version": "0.7.9.1"
+        "version": "0.9.4.1"
     },
     "kanata": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-jzTK_ZK9UrXTP_Ow662ENBv3cim6klA8+DQv4DLVSNU=/Cargo.lock",
+                "sha256-7rGV0nfI_ntvByz3NQs_2Sa2q_Ml8O3XRD14Mbt5fIU=/Cargo.lock",
                 {}
             ]
         },
@@ -115,12 +115,12 @@
             "name": null,
             "owner": "jtroo",
             "repo": "kanata",
-            "rev": "v1.10.1",
-            "sha256": "sha256-jzTK/ZK9UrXTP/Ow662ENBv3cim6klA8+DQv4DLVSNU=",
+            "rev": "v1.11.0",
+            "sha256": "sha256-7rGV0nfI/ntvByz3NQs/2Sa2q/Ml8O3XRD14Mbt5fIU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.10.1"
+        "version": "v1.11.0"
     },
     "kanata-tray": {
         "cargoLock": null,
@@ -178,33 +178,12 @@
             "name": null,
             "owner": "pqrs-org",
             "repo": "Karabiner-DriverKit-VirtualHIDDevice",
-            "rev": "v6.7.0",
-            "sha256": "sha256-Yy1h8icYuJUZwU5vB01CAcqraEqugVSrp4dmhOrh58I=",
+            "rev": "v6.10.0",
+            "sha256": "sha256-Nlw64Qstdgeh9C7RELiOPkoVNbiZsT3OKHLqhF44yS8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.7.0"
-    },
-    "musly": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "musly",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "dddevid",
-            "repo": "musly",
-            "rev": "v1.0.2",
-            "sha256": "sha256-TA8LLOeu2OeObAHEoRswuz38dWlLGFbfAAHmvO4TrYo=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "v1.0.2"
+        "version": "v6.10.0"
     },
     "yabai": {
         "cargoLock": null,
@@ -220,12 +199,12 @@
             "name": null,
             "owner": "koekeishiya",
             "repo": "yabai",
-            "rev": "v7.1.16",
-            "sha256": "sha256-WXvM0ub4kJ3rKXynTxmr2Mx+LzJOgmm02CcEx2nsy/A=",
+            "rev": "v7.1.17",
+            "sha256": "sha256-XBJUh2l1DurftKZtved0D4LXe+kQ5od9SfIL6J/ymKI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v7.1.16"
+        "version": "v7.1.17"
     },
     "zen": {
         "cargoLock": null,
@@ -236,11 +215,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Lv7K5782E2ci5rtRA3SQpkZ+kVdOgYhD2Lc+L+gyFtA=",
+            "sha256": "sha256-6VhV/HVzgBdjvhm1pi1qn9nhfE+d2IvOt0aYzX8Gs7Q=",
             "type": "url",
-            "url": "https://github.com/zen-browser/desktop/releases/download/1.17.15b/zen.macos-universal.dmg"
+            "url": "https://github.com/zen-browser/desktop/releases/download/1.18.10b/zen.macos-universal.dmg"
         },
-        "version": "1.17.15b"
+        "version": "1.18.10b"
     },
     "zen-twilight": {
         "cargoLock": null,
@@ -251,10 +230,10 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-DrtQ4ReiHWgL00x1Y9UDg9tVJC6yzH49lkxxbT+h+jM=",
+            "sha256": "sha256-Aiw1PC/Hhkb/Ao5rNV9GAqhpDLeOFaVdNgYhL03ol+I=",
             "type": "url",
-            "url": "https://github.com/zen-browser/desktop/releases/download/twilight/zen.macos-universal.dmg"
+            "url": "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.macos-universal.dmg"
         },
-        "version": "1.17.15b"
+        "version": "1.18.10b"
     }
 }

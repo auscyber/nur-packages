@@ -39,40 +39,40 @@
     version = "tip";
     src = fetchurl {
       url = "https://github.com/ghostty-org/ghostty/releases/download/tip/ghostty-macos-universal.zip";
-      sha256 = "sha256-rzuE082LklzW7Tz1eDTRDyms/hiViySuX7ucoPIDOo8=";
+      sha256 = "sha256-KEzSxCyqFHjIKGgzLjqFM2V9mmr6IHq3pC2b1J9/crw=";
     };
   };
   helium-linux = {
     pname = "helium-linux";
-    version = "0.7.9.1";
+    version = "0.9.4.1";
     src = fetchFromGitHub {
       owner = "imputnet";
       repo = "helium-linux";
-      rev = "0.7.9.1";
+      rev = "0.9.4.1";
       fetchSubmodules = false;
-      sha256 = "sha256-7bwEawrQWwtQXfg4u1dkJXoex1HE8chwn2FMtPkaidQ=";
+      sha256 = "sha256-z/gnlRGy9Xo/j7lfN3uwmlAPhyKpYwMhGvf/GN6Vwl0=";
     };
   };
   helium-macos = {
     pname = "helium-macos";
-    version = "0.7.9.1";
+    version = "0.9.4.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-macos/releases/download/0.7.9.1/helium_0.7.9.1_arm64-macos.dmg";
-      sha256 = "sha256-swFxWgHONhdzfLpwGVoje/ceTwCZFmoO3FBeIbjqIaY=";
+      url = "https://github.com/imputnet/helium-macos/releases/download/0.9.4.1/helium_0.9.4.1_arm64-macos.dmg";
+      sha256 = "sha256-miPsputiNQwAm867O5I+OBZAr52OzzIFD1UHMzWDMVQ=";
     };
   };
   kanata = {
     pname = "kanata";
-    version = "v1.10.1";
+    version = "v1.11.0";
     src = fetchFromGitHub {
       owner = "jtroo";
       repo = "kanata";
-      rev = "v1.10.1";
+      rev = "v1.11.0";
       fetchSubmodules = false;
-      sha256 = "sha256-jzTK/ZK9UrXTP/Ow662ENBv3cim6klA8+DQv4DLVSNU=";
+      sha256 = "sha256-7rGV0nfI/ntvByz3NQs/2Sa2q/Ml8O3XRD14Mbt5fIU=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-jzTK_ZK9UrXTP_Ow662ENBv3cim6klA8+DQv4DLVSNU=/Cargo.lock";
+      lockFile = ./. + "/sha256-7rGV0nfI_ntvByz3NQs_2Sa2q_Ml8O3XRD14Mbt5fIU=/Cargo.lock";
       outputHashes = {
         
       };
@@ -103,51 +103,40 @@
   };
   karabiner-dk = {
     pname = "karabiner-dk";
-    version = "v6.7.0";
+    version = "v6.10.0";
     src = fetchFromGitHub {
       owner = "pqrs-org";
       repo = "Karabiner-DriverKit-VirtualHIDDevice";
-      rev = "v6.7.0";
+      rev = "v6.10.0";
       fetchSubmodules = false;
-      sha256 = "sha256-Yy1h8icYuJUZwU5vB01CAcqraEqugVSrp4dmhOrh58I=";
-    };
-  };
-  musly = {
-    pname = "musly";
-    version = "v1.0.2";
-    src = fetchFromGitHub {
-      owner = "dddevid";
-      repo = "musly";
-      rev = "v1.0.2";
-      fetchSubmodules = false;
-      sha256 = "sha256-TA8LLOeu2OeObAHEoRswuz38dWlLGFbfAAHmvO4TrYo=";
+      sha256 = "sha256-Nlw64Qstdgeh9C7RELiOPkoVNbiZsT3OKHLqhF44yS8=";
     };
   };
   yabai = {
     pname = "yabai";
-    version = "v7.1.16";
+    version = "v7.1.17";
     src = fetchFromGitHub {
       owner = "koekeishiya";
       repo = "yabai";
-      rev = "v7.1.16";
+      rev = "v7.1.17";
       fetchSubmodules = false;
-      sha256 = "sha256-WXvM0ub4kJ3rKXynTxmr2Mx+LzJOgmm02CcEx2nsy/A=";
+      sha256 = "sha256-XBJUh2l1DurftKZtved0D4LXe+kQ5od9SfIL6J/ymKI=";
     };
   };
   zen = {
     pname = "zen";
-    version = "1.17.15b";
+    version = "1.18.10b";
     src = fetchurl {
-      url = "https://github.com/zen-browser/desktop/releases/download/1.17.15b/zen.macos-universal.dmg";
-      sha256 = "sha256-Lv7K5782E2ci5rtRA3SQpkZ+kVdOgYhD2Lc+L+gyFtA=";
+      url = "https://github.com/zen-browser/desktop/releases/download/1.18.10b/zen.macos-universal.dmg";
+      sha256 = "sha256-6VhV/HVzgBdjvhm1pi1qn9nhfE+d2IvOt0aYzX8Gs7Q=";
     };
   };
   zen-twilight = {
     pname = "zen-twilight";
-    version = "1.17.15b";
+    version = "1.18.10b";
     src = fetchurl {
-      url = "https://github.com/zen-browser/desktop/releases/download/twilight/zen.macos-universal.dmg";
-      sha256 = "sha256-DrtQ4ReiHWgL00x1Y9UDg9tVJC6yzH49lkxxbT+h+jM=";
+      url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.macos-universal.dmg";
+      sha256 = "sha256-Aiw1PC/Hhkb/Ao5rNV9GAqhpDLeOFaVdNgYhL03ol+I=";
     };
   };
 }
