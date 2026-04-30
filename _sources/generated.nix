@@ -44,21 +44,21 @@
   };
   helium-linux = {
     pname = "helium-linux";
-    version = "0.11.5.1";
+    version = "0.11.7.1";
     src = fetchFromGitHub {
       owner = "imputnet";
       repo = "helium-linux";
-      rev = "0.11.5.1";
+      rev = "0.11.7.1";
       fetchSubmodules = false;
-      sha256 = "sha256-BIWI6dVdoC6/1nRVQBfTCrw7maFuFine6LgqSYijVTo=";
+      sha256 = "sha256-Mj/q6rcXpMJNs1xxcigHsCx3yiGczrFH0EKeHLmP2bE=";
     };
   };
   helium-macos = {
     pname = "helium-macos";
-    version = "0.11.5.1";
+    version = "0.11.7.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-macos/releases/download/0.11.5.1/helium_0.11.5.1_arm64-macos.dmg";
-      sha256 = "sha256-P5iXtXS05uu5Qy9jPheXAbjewn6jKTcqc5uF2yZoz/k=";
+      url = "https://github.com/imputnet/helium-macos/releases/download/0.11.7.1/helium_0.11.7.1_arm64-macos.dmg";
+      sha256 = "sha256-jbu/w3/GYC60Gs0ueeECrbeDDSLAoXFManquIpw0VvM=";
     };
   };
   kanata = {
@@ -136,7 +136,7 @@
     version = "1.19.10b";
     src = fetchurl {
       url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.macos-universal.dmg";
-      sha256 = "sha256-bHPoUwBWTLC75eEPk/6yqluCvlw7csqS3LYH91PuAv8=";
+      sha256 = "sha256-Q0BfO1tnUQlKlOB8Weq7FQLeO/GcNn+LhajHDcE0DCk=";
     };
   };
 }
