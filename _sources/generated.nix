@@ -97,9 +97,9 @@
   karabiner-dk = {
     pname = "karabiner-dk";
     version = "8.0.0";
-    src = fetchTarball {
+    src = fetchurl {
       url = "https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/archive/v8.0.0.tar.gz";
-      sha256 = "sha256-wjm2E3WzZVYn/IyjquN4Iae8uu20GQmr3AjpBnKdwEY=";
+      sha256 = "sha256-uOEw3zbOvqFnNP8keOnnsM/gqKTMaUKasjD9MQeahm0=";
     };
   };
   yabai = {
