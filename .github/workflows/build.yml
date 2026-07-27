@@ -74,7 +74,7 @@ jobs:
       with:
         endpoint: https://cache.ivymect.in
         cache: main
-        token: ${{ secrets.CELLER_TOKEN }}
+        token: ${{ secrets.ATTIC_TOKEN }}
 
     - name: Check evaluation
       run: |
