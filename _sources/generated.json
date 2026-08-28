@@ -39,7 +39,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-QguMDoLBVArSjOaoNnBJgICsTiGcozrxCATGVYrpBJg=",
+            "sha256": "sha256-VBxZ1Vxc+vi5UJdIedxgeKF6XFL+Yktmzq7lhTJIjoU=",
             "type": "url",
             "url": "https://github.com/ghostty-org/ghostty/releases/download/tip/ghostty-macos-universal.zip"
         },
@@ -59,12 +59,12 @@
             "name": null,
             "owner": "imputnet",
             "repo": "helium-linux",
-            "rev": "0.15.6.1",
-            "sha256": "sha256-XTVT/hzng6FG72s6xOt1dAPhCIbg6rKyYFj4i5ZGS8w=",
+            "rev": "0.16.1.1",
+            "sha256": "sha256-SHwIDgdWtZ0qtrjBozAMZ6Yl2K/Ha1wvZl5aEQCkMRY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "0.15.6.1"
+        "version": "0.16.1.1"
     },
     "helium-macos": {
         "cargoLock": null,
@@ -75,11 +75,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-medoiZEkXGXVDSc1LP6t/aU1DrtkqtQOtHGDPN8yPXk=",
+            "sha256": "sha256-QQT3dtBKQvnGi3ySsgaVeXGqKIJ/iys5fDApZnDlt5E=",
             "type": "url",
-            "url": "https://github.com/imputnet/helium-macos/releases/download/0.15.6.1/helium_0.15.6.1_arm64-macos.dmg"
+            "url": "https://github.com/imputnet/helium-macos/releases/download/0.15.7.1/helium_0.15.7.1_arm64-macos.dmg"
         },
-        "version": "0.15.6.1"
+        "version": "0.15.7.1"
     },
     "kanata": {
         "cargoLock": {
@@ -208,7 +208,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-tsdwXN4dcWWBxGiMZr90VSKT7zaYH9aYsrTj5yp9Hpw=",
+            "sha256": "sha256-des1VOKhbyuIaBzT0EbaOdELeJj1A66erLzleUl6wwQ=",
             "type": "url",
             "url": "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.macos-universal.dmg"
         },
