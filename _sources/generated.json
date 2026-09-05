@@ -39,7 +39,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-E+JdB9l7Cx1aKXMU2E7ootiTUVZvejAnAeYF6Orz17E=",
+            "sha256": "sha256-UO9jhWnIOB+SiAZs/+tMnDzmnU5wLNV2CmW8BGAT0Mw=",
             "type": "url",
             "url": "https://github.com/ghostty-org/ghostty/releases/download/tip/ghostty-macos-universal.zip"
         },
@@ -59,12 +59,12 @@
             "name": null,
             "owner": "imputnet",
             "repo": "helium-linux",
-            "rev": "0.16.4.1",
-            "sha256": "sha256-0/IlUCq1ysgb66QOK5b2PN+D5YOhnPk/FiRWR4dQ/jc=",
+            "rev": "0.16.5.1",
+            "sha256": "sha256-7Qiwj+X6v4IeyowigOyxsqh+4iYFzgqYWxnUBYqldX8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "0.16.4.1"
+        "version": "0.16.5.1"
     },
     "helium-macos": {
         "cargoLock": null,
@@ -75,11 +75,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-fJRdy6yoFR0rLCh9Q4p7Rry+aaPZ2SHbh9YMw1tLj2w=",
+            "sha256": "sha256-i+05Lp/WdkZ81I1oxr+uvFaRjGGgFePZHlVBF1CVTZs=",
             "type": "url",
-            "url": "https://github.com/imputnet/helium-macos/releases/download/0.16.4.1/helium_0.16.4.1_arm64-macos.dmg"
+            "url": "https://github.com/imputnet/helium-macos/releases/download/0.16.5.1/helium_0.16.5.1_arm64-macos.dmg"
         },
-        "version": "0.16.4.1"
+        "version": "0.16.5.1"
     },
     "kanata": {
         "cargoLock": {
@@ -157,11 +157,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-dIkXDeNrq64Zfx3C0bWnKK7ztdMxvtDdm3t9l0Nxmpw=",
+            "sha256": "sha256-J5YWV5v+6tStpxESOzGiI4sRbtfA42px+xGtedP06OM=",
             "type": "url",
-            "url": "https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/archive/v8.3.0.tar.gz"
+            "url": "https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/archive/v8.4.0.tar.gz"
         },
-        "version": "8.3.0"
+        "version": "8.4.0"
     },
     "yabai": {
         "cargoLock": null,
