@@ -30,26 +30,26 @@
     version = "tip";
     src = fetchurl {
       url = "https://github.com/ghostty-org/ghostty/releases/download/tip/ghostty-macos-universal.zip";
-      sha256 = "sha256-PmONWIw0dEgJ83tUaLYg/TNNfODHYV9wmIYAtD6FFRI=";
+      sha256 = "sha256-MByo2R1DLob0nzVqSkTNozETqFqMIPP7gHch7AYB9XY=";
     };
   };
   helium-linux = {
     pname = "helium-linux";
-    version = "0.17.1.1";
+    version = "0.17.2.1";
     src = fetchFromGitHub {
       owner = "imputnet";
       repo = "helium-linux";
-      rev = "0.17.1.1";
+      rev = "0.17.2.1";
       fetchSubmodules = false;
-      sha256 = "sha256-7lv5UTeoMOMxC/qWSm2hyrLUmwpkzMiOeSm4ZEGGPYw=";
+      sha256 = "sha256-IGeaqmCErWlPl4JmMMaSy4Y4BICKkMJA9ZdzqBKNJSE=";
     };
   };
   helium-macos = {
     pname = "helium-macos";
-    version = "0.17.1.1";
+    version = "0.17.2.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-macos/releases/download/0.17.1.1/helium_0.17.1.1_arm64-macos.dmg";
-      sha256 = "sha256-WaP80DO0mo2AsjtxfQfmA5iusrl+x4xwJN+WqeAbgBQ=";
+      url = "https://github.com/imputnet/helium-macos/releases/download/0.17.2.1/helium_0.17.2.1_arm64-macos.dmg";
+      sha256 = "sha256-8aP+zePAglTxse7DDjbs0l+YzzeZZEQn+879bmvq+s8=";
     };
   };
   kanata = {
@@ -126,7 +126,7 @@
     version = "1.22.2b";
     src = fetchurl {
       url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.macos-universal.dmg";
-      sha256 = "sha256-fD2sZ5SQNWYeUJslX3Azap0C7EZeCEp1xYGdRj+vU8c=";
+      sha256 = "sha256-vZvQ5PYHgSscEYzW/n/uAIv9VlFks0/R5mheHdq9Wic=";
     };
   };
 }
