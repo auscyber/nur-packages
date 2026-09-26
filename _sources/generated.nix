@@ -30,7 +30,7 @@
     version = "tip";
     src = fetchurl {
       url = "https://github.com/ghostty-org/ghostty/releases/download/tip/ghostty-macos-universal.zip";
-      sha256 = "sha256-GdFk2Ml0AN3y7LFXk3Eq/Ic4wJdWLy3j8ABIskJ5GU8=";
+      sha256 = "sha256-nNjGCSO4n/onJCb/8OxyINCUTUx4wqRtJHL0fBoEH2o=";
     };
   };
   helium-linux = {
@@ -46,10 +46,10 @@
   };
   helium-macos = {
     pname = "helium-macos";
-    version = "0.17.2.2";
+    version = "0.18.1.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-macos/releases/download/0.17.2.2/helium_0.17.2.2_arm64-macos.dmg";
-      sha256 = "sha256-CYY5HNzCql7wLB8kjE1iTRomoO6khmBsO56zNhehCVg=";
+      url = "https://github.com/imputnet/helium-macos/releases/download/0.18.1.1/helium_0.18.1.1_arm64-macos.dmg";
+      sha256 = "sha256-QY5zOYBxYcvaxC26cFIGeZcFdtUPWqTzCj8IYv60odk=";
     };
   };
   kanata = {
@@ -96,10 +96,10 @@
   };
   karabiner-dk = {
     pname = "karabiner-dk";
-    version = "8.5.0";
+    version = "8.6.0";
     src = fetchurl {
-      url = "https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/archive/v8.5.0.tar.gz";
-      sha256 = "sha256-bjuLD+mLLrmsgqBICbDDySZR85foTFe1ETLPf8Gcl0U=";
+      url = "https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/archive/v8.6.0.tar.gz";
+      sha256 = "sha256-qmhYDUF22NqVyYo/Pk3PPWy0AzoRjc0OWrBZHyfKIYY=";
     };
   };
   yabai = {
@@ -126,7 +126,7 @@
     version = "1.22.3b";
     src = fetchurl {
       url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.macos-universal.dmg";
-      sha256 = "sha256-aXv5L2mqLM+IwBvjSmjqWnkLxSNE+y+5V5BVz38tHUo=";
+      sha256 = "sha256-VbDgVYLKH4BSUefbj5GxVgLSsbE12Ml4B09VZaUUSxg=";
     };
   };
 }
