@@ -39,7 +39,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-7oPtk6IEu5mFj4xYJBVfR6/a88IJHGW15vL7f84yuMo=",
+            "sha256": "sha256-BvNZEviGiMu9ZGq7eodV5KgRzH4xdC6JYbjCEkutH5s=",
             "type": "url",
             "url": "https://github.com/ghostty-org/ghostty/releases/download/tip/ghostty-macos-universal.zip"
         },
@@ -59,12 +59,12 @@
             "name": null,
             "owner": "imputnet",
             "repo": "helium-linux",
-            "rev": "0.18.3.1",
-            "sha256": "sha256-vGqMlCGDLIE45hXl/Nt1nHJ6Q87ull0KN91ZpzMDq3w=",
+            "rev": "0.19.1.2",
+            "sha256": "sha256-Dno/D47/5JVlF8i0SY1FXNFr0tFSNk9kbJdE63C2oIo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "0.18.3.1"
+        "version": "0.19.1.2"
     },
     "helium-macos": {
         "cargoLock": null,
@@ -84,7 +84,7 @@
     "kanata": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-ypTm0j_f6M2mOM1NjnG4VL8n4XnKrHo3+at7UEWni7A=/Cargo.lock",
+                "sha256-EDmhgP8P4wZolP9QZDrO0VOODd5c0416ruPNIeftLys=/Cargo.lock",
                 {}
             ]
         },
@@ -100,12 +100,12 @@
             "name": null,
             "owner": "jtroo",
             "repo": "kanata",
-            "rev": "v1.12.1-prerelease-1",
-            "sha256": "sha256-ypTm0j/f6M2mOM1NjnG4VL8n4XnKrHo3+at7UEWni7A=",
+            "rev": "v1.13.0-prerelease-1",
+            "sha256": "sha256-EDmhgP8P4wZolP9QZDrO0VOODd5c0416ruPNIeftLys=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.12.1-prerelease-1"
+        "version": "v1.13.0-prerelease-1"
     },
     "kanata-tray": {
         "cargoLock": null,
@@ -208,7 +208,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Em/sd4AJjHs7OnywGLu+4AxLjtp03Hm+8n8FmZoIWnU=",
+            "sha256": "sha256-iBCnvMpC6EaeC6aDxQfFdFf/rdvSEgiRgS2d03UqPFg=",
             "type": "url",
             "url": "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.macos-universal.dmg"
         },
