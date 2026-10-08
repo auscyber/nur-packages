@@ -30,18 +30,18 @@
     version = "tip";
     src = fetchurl {
       url = "https://github.com/ghostty-org/ghostty/releases/download/tip/ghostty-macos-universal.zip";
-      sha256 = "sha256-7oPtk6IEu5mFj4xYJBVfR6/a88IJHGW15vL7f84yuMo=";
+      sha256 = "sha256-BvNZEviGiMu9ZGq7eodV5KgRzH4xdC6JYbjCEkutH5s=";
     };
   };
   helium-linux = {
     pname = "helium-linux";
-    version = "0.18.3.1";
+    version = "0.19.1.2";
     src = fetchFromGitHub {
       owner = "imputnet";
       repo = "helium-linux";
-      rev = "0.18.3.1";
+      rev = "0.19.1.2";
       fetchSubmodules = false;
-      sha256 = "sha256-vGqMlCGDLIE45hXl/Nt1nHJ6Q87ull0KN91ZpzMDq3w=";
+      sha256 = "sha256-Dno/D47/5JVlF8i0SY1FXNFr0tFSNk9kbJdE63C2oIo=";
     };
   };
   helium-macos = {
@@ -54,16 +54,16 @@
   };
   kanata = {
     pname = "kanata";
-    version = "v1.12.1-prerelease-1";
+    version = "v1.13.0-prerelease-1";
     src = fetchFromGitHub {
       owner = "jtroo";
       repo = "kanata";
-      rev = "v1.12.1-prerelease-1";
+      rev = "v1.13.0-prerelease-1";
       fetchSubmodules = false;
-      sha256 = "sha256-ypTm0j/f6M2mOM1NjnG4VL8n4XnKrHo3+at7UEWni7A=";
+      sha256 = "sha256-EDmhgP8P4wZolP9QZDrO0VOODd5c0416ruPNIeftLys=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-ypTm0j_f6M2mOM1NjnG4VL8n4XnKrHo3+at7UEWni7A=/Cargo.lock";
+      lockFile = ./. + "/sha256-EDmhgP8P4wZolP9QZDrO0VOODd5c0416ruPNIeftLys=/Cargo.lock";
       outputHashes = {
         
       };
@@ -126,7 +126,7 @@
     version = "1.23.1b";
     src = fetchurl {
       url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.macos-universal.dmg";
-      sha256 = "sha256-Em/sd4AJjHs7OnywGLu+4AxLjtp03Hm+8n8FmZoIWnU=";
+      sha256 = "sha256-iBCnvMpC6EaeC6aDxQfFdFf/rdvSEgiRgS2d03UqPFg=";
     };
   };
 }
