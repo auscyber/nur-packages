@@ -30,26 +30,26 @@
     version = "tip";
     src = fetchurl {
       url = "https://github.com/ghostty-org/ghostty/releases/download/tip/ghostty-macos-universal.zip";
-      sha256 = "sha256-qGVwBXgBBGikeMyxSwAI51etVKeKVqpcFuDpfVv3egk=";
+      sha256 = "sha256-S2LYzsBgzS+ifI2W/i7iPNAo2YGILqcds6zUTqm6HWM=";
     };
   };
   helium-linux = {
     pname = "helium-linux";
-    version = "0.19.4.1";
+    version = "0.20.1.1";
     src = fetchFromGitHub {
       owner = "imputnet";
       repo = "helium-linux";
-      rev = "0.19.4.1";
+      rev = "0.20.1.1";
       fetchSubmodules = false;
-      sha256 = "sha256-Enpnf+m3sAerNa2LStAVFNUQwv4URib3UxUi8u8M+II=";
+      sha256 = "sha256-mHzDrZ9lA3hXDV8UIdqmmLjmrdTS6Vsc8CCgWcQWdTM=";
     };
   };
   helium-macos = {
     pname = "helium-macos";
-    version = "0.19.4.1";
+    version = "0.20.1.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-macos/releases/download/0.19.4.1/helium_0.19.4.1_arm64-macos.dmg";
-      sha256 = "sha256-Ew5DEAjyXe2dUiEL36hmsKzlnQTNqv8Hx3kx+9f5MyE=";
+      url = "https://github.com/imputnet/helium-macos/releases/download/0.20.1.1/helium_0.20.1.1_arm64-macos.dmg";
+      sha256 = "sha256-WhFxjqIjeh5Z8shPrPIWar24B3M5kIXWzXhF1z8dc5o=";
     };
   };
   kanata = {
@@ -115,18 +115,18 @@
   };
   zen = {
     pname = "zen";
-    version = "1.23.3b";
+    version = "1.23.4b";
     src = fetchurl {
-      url = "https://github.com/zen-browser/desktop/releases/download/1.23.3b/zen.macos-universal.dmg";
-      sha256 = "sha256-BR+jbMekx00AGRU2nEg9Hy6ohGgPzmreTl38TrciGOA=";
+      url = "https://github.com/zen-browser/desktop/releases/download/1.23.4b/zen.macos-universal.dmg";
+      sha256 = "sha256-2kEAM7G7M0ugVIUJQ6Of02THTTaN66frGdxeT2hCD60=";
     };
   };
   zen-twilight = {
     pname = "zen-twilight";
-    version = "1.23.3b";
+    version = "1.23.4b";
     src = fetchurl {
       url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.macos-universal.dmg";
-      sha256 = "sha256-X24hdIqW9OOEG1bjzd5vbdG1MpwKQYXDRoF6kY+Ms18=";
+      sha256 = "sha256-H+Pv9tvEaRUO+G53EBsfsG8SpKeFG/HYA5KJP2LdGcY=";
     };
   };
 }
