@@ -157,11 +157,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-qmhYDUF22NqVyYo/Pk3PPWy0AzoRjc0OWrBZHyfKIYY=",
+            "sha256": "sha256-j/Fp407SuNXTh24HmP5pMHXjQX2LqUvCLu526uyk/rw=",
             "type": "url",
-            "url": "https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/archive/v8.6.0.tar.gz"
+            "url": "https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/archive/v8.7.0.tar.gz"
         },
-        "version": "8.6.0"
+        "version": "8.7.0"
     },
     "yabai": {
         "cargoLock": null,
