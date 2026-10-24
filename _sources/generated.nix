@@ -96,10 +96,10 @@
   };
   karabiner-dk = {
     pname = "karabiner-dk";
-    version = "8.6.0";
+    version = "8.7.0";
     src = fetchurl {
-      url = "https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/archive/v8.6.0.tar.gz";
-      sha256 = "sha256-qmhYDUF22NqVyYo/Pk3PPWy0AzoRjc0OWrBZHyfKIYY=";
+      url = "https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/archive/v8.7.0.tar.gz";
+      sha256 = "sha256-j/Fp407SuNXTh24HmP5pMHXjQX2LqUvCLu526uyk/rw=";
     };
   };
   yabai = {
