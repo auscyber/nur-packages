@@ -19,10 +19,10 @@
   };
   ghostty = {
     pname = "ghostty";
-    version = "1.3.1";
+    version = "1.4.0";
     src = fetchurl {
-      url = "https://release.files.ghostty.org/1.3.1/Ghostty.dmg";
-      sha256 = "sha256-GM/ysKbO6Q7q2cfTBk6AiiUqQLryFKp1LB7LeTuPX2k=";
+      url = "https://release.files.ghostty.org/1.4.0/Ghostty.dmg";
+      sha256 = "sha256-OgIHXb0kMY13hCavQd7lUH1T7MRXjt6WkS7Jzm0Y0+g=";
     };
   };
   ghostty-nightly = {
@@ -30,7 +30,7 @@
     version = "tip";
     src = fetchurl {
       url = "https://github.com/ghostty-org/ghostty/releases/download/tip/ghostty-macos-universal.zip";
-      sha256 = "sha256-V7Qqy588bhIjjZ+JQvtRr7mjf/75zki+n6KZGds8lTI=";
+      sha256 = "sha256-QFX3NBuPO9V81zCc78dAY+xZ+gML9N0IL1okyA8BG7Q=";
     };
   };
   helium-linux = {
