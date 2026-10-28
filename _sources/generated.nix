@@ -30,18 +30,18 @@
     version = "tip";
     src = fetchurl {
       url = "https://github.com/ghostty-org/ghostty/releases/download/tip/ghostty-macos-universal.zip";
-      sha256 = "sha256-MPFAhd0tfbOLrysZj4r0IwTOwJF2l45svOC4lxGh4Gw=";
+      sha256 = "sha256-iPXPaAOOyWBHiagLPbVoiiRojlvExWoGXHvxZeRLlQU=";
     };
   };
   helium-linux = {
     pname = "helium-linux";
-    version = "0.20.1.1";
+    version = "0.20.2.1";
     src = fetchFromGitHub {
       owner = "imputnet";
       repo = "helium-linux";
-      rev = "0.20.1.1";
+      rev = "0.20.2.1";
       fetchSubmodules = false;
-      sha256 = "sha256-mHzDrZ9lA3hXDV8UIdqmmLjmrdTS6Vsc8CCgWcQWdTM=";
+      sha256 = "sha256-4agMJ/7lt6DLLzSNjp1YdrA+mc5IRr6paxvQjlh0dGk=";
     };
   };
   helium-macos = {
