@@ -39,7 +39,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-84xPPyGai3FpQuS2r8NdwGihz6IA436520oKXIaoa3A=",
+            "sha256": "sha256-pnk9zq854bL5kuDTJSfGWvJiKFIpRzt4dd6t28KULho=",
             "type": "url",
             "url": "https://github.com/ghostty-org/ghostty/releases/download/tip/ghostty-macos-universal.zip"
         },
@@ -208,7 +208,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-fc4QQDESFV2nowqM4iaIuGc+btXiu3mfvhVJ6IEqf48=",
+            "sha256": "sha256-9NKezif6N0EK4MorSQpW+4WsvAWRot5XdHAbxtJULyw=",
             "type": "url",
             "url": "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.macos-universal.dmg"
         },
