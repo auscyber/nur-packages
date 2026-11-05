@@ -30,7 +30,7 @@
     version = "tip";
     src = fetchurl {
       url = "https://github.com/ghostty-org/ghostty/releases/download/tip/ghostty-macos-universal.zip";
-      sha256 = "sha256-R2Arhi8rR3LR79AVIO690iKxd7Qh7opoaRWtz43dT8Q=";
+      sha256 = "sha256-uIIWk/r3sN9oOBkBUTi1bbfHBC3kaEaDbURPGOgti5w=";
     };
   };
   helium-linux = {
@@ -46,10 +46,10 @@
   };
   helium-macos = {
     pname = "helium-macos";
-    version = "0.20.3.1";
+    version = "0.21.1.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-macos/releases/download/0.20.3.1/helium_0.20.3.1_arm64-macos.dmg";
-      sha256 = "sha256-+bLzEuu6qb4J/Fml3pGRQE3ACPFQJDSm8xmvKk3MusU=";
+      url = "https://github.com/imputnet/helium-macos/releases/download/0.21.1.1/helium_0.21.1.1_arm64-macos.dmg";
+      sha256 = "sha256-4L441LObjOEgt8fu2hKOz7oOZhHV0j8vurLjUQwnYzE=";
     };
   };
   kanata = {
