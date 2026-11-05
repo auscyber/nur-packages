@@ -39,7 +39,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-vsKLDWCmw9XkTJ6fT+pTlxguTWChL7oNp1qaqqayB80=",
+            "sha256": "sha256-R2Arhi8rR3LR79AVIO690iKxd7Qh7opoaRWtz43dT8Q=",
             "type": "url",
             "url": "https://github.com/ghostty-org/ghostty/releases/download/tip/ghostty-macos-universal.zip"
         },
@@ -59,12 +59,12 @@
             "name": null,
             "owner": "imputnet",
             "repo": "helium-linux",
-            "rev": "0.20.3.1",
-            "sha256": "sha256-m4tmykXnv+bziDjbSlj1D9P+qnjy2617jxo+ZZEVBwk=",
+            "rev": "0.21.1.1",
+            "sha256": "sha256-N2sDWFW3+mRnQOVBXBRe91o1P+ZDzZtHWMJiSimxk9Q=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "0.20.3.1"
+        "version": "0.21.1.1"
     },
     "helium-macos": {
         "cargoLock": null,
@@ -208,7 +208,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-7gYnsecCa5WSl/gIWbdohRX1EQupk3kbjcBaiBdpZB0=",
+            "sha256": "sha256-IwRlKGOqLYhVlvnBr45EOpcTGJGOBm+Xeit5CkhRbJs=",
             "type": "url",
             "url": "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.macos-universal.dmg"
         },
