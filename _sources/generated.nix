@@ -30,26 +30,26 @@
     version = "tip";
     src = fetchurl {
       url = "https://github.com/ghostty-org/ghostty/releases/download/tip/ghostty-macos-universal.zip";
-      sha256 = "sha256-2XU6JxACAGwKC2/eEgGSWOanRn9dRTgEHhvzhEjEntQ=";
+      sha256 = "sha256-BZHfamti4MyYNjUHY+ZWKyuuBzZF8UpS6xCL4XiRS0k=";
     };
   };
   helium-linux = {
     pname = "helium-linux";
-    version = "0.22.1.1";
+    version = "0.22.2.1";
     src = fetchFromGitHub {
       owner = "imputnet";
       repo = "helium-linux";
-      rev = "0.22.1.1";
+      rev = "0.22.2.1";
       fetchSubmodules = false;
-      sha256 = "sha256-wFtHdu9WFnX0rVKsn9EarXqDEqRX+ZSTT2VWM6wChWI=";
+      sha256 = "sha256-5G0toyIrhGxDM3/TcHO6ppL7Jt29ttgytSnr8uChH2U=";
     };
   };
   helium-macos = {
     pname = "helium-macos";
-    version = "0.22.1.1";
+    version = "0.22.2.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-macos/releases/download/0.22.1.1/helium_0.22.1.1_arm64-macos.dmg";
-      sha256 = "sha256-jCNEgMASI8nbyejcW8W+CLjkNBQ31i2unXWUK1lPvVE=";
+      url = "https://github.com/imputnet/helium-macos/releases/download/0.22.2.1/helium_0.22.2.1_arm64-macos.dmg";
+      sha256 = "sha256-wzU6qTaERhMhAgPJR8PTFd6zJVx40JKTFBxEfdMkw4g=";
     };
   };
   kanata = {
@@ -71,13 +71,13 @@
   };
   kanata-tray = {
     pname = "kanata-tray";
-    version = "v0.8.0";
+    version = "v0.9.0";
     src = fetchFromGitHub {
       owner = "rszyma";
       repo = "kanata-tray";
-      rev = "v0.8.0";
+      rev = "v0.9.0";
       fetchSubmodules = false;
-      sha256 = "sha256-RTLFDB/irtEhEHwarROGmS4jNdRhruU1JKen48ADzZg=";
+      sha256 = "sha256-9PoR96O8tBw9A0F0U23qe+FGroTTa8Bx7BMT5PFEKvY=";
     };
   };
   kanata-vk-agent = {
@@ -126,7 +126,7 @@
     version = "1.24.3b";
     src = fetchurl {
       url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.macos-universal.dmg";
-      sha256 = "sha256-4B83Ktw0VTHvNkESq8hmAIdO/fx/KKOVRx1lagia81I=";
+      sha256 = "sha256-6JfvKi4KO8dk+Ij0J1+zoL95ukSX1OMZ6HyohmQvmtE=";
     };
   };
 }
